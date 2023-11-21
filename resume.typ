@@ -2,70 +2,160 @@
 
 #show: chicv
 
-= Roife
+= 张博豪
 
-#fa[#envelope] roifewu\@gmail.com |
-#fa[#github] #link("https://github.com/roife")[roife] |
-#fa[#globe] #link("https://roife.github.io")[roife.github.io]
+#fa[#envelope] bohaocheung\@gmail.com 
 
-== Education
+== 教育背景
 
 #cventry(
-  tl: "Nanjing University (NJU)",
-  tr:  "2023/09 - 2026/06 (expected)",
-  bl: "Master of Computer Science and Technology",
-  br: "Nanjing, Jinagsu, China"
+  tl: "北京航空航天大学 (BUAA)",
+  tr:  "2021/09 - 2025/06 (expected)",
+  bl: "计算机科学与技术"
 )[
-  - Member of #link("https://pascal-lab.net")[Pascal Research Group]. Major in PL, program analysis and EDA.
-]
-#cventry(
-  tl: "Beihang University (BUAA)",
-  tr:  "2019/09 - 2023/06",
-  bl: "Bachelor of Computer Science and Technology",
-  br: "Beijing, China"
-)[
-  - GPA 3.84/4.00, National Scholarship 2022 (Top 0.2% national-wide), Outstanding Graduate of BUAA.
-  - the First Price of NSCSCC Compilation System Design Competition (Huawei Bisheng Cup) 2021, ranking 2nd.
-  - Teaching assistant for _Programming in Practice_ (Fall 2020), _Object oriented Design and Construction_ (Fall 2021, Spring 2022).
+  - GPA:3.82/4.00 | rank:19/220, 8.6%
 ]
 
-== Research Experience
+== 获奖经历
 
 #cventry(
-  tl: "A lightweight edge-side compiler for neural network operators" + " " + iconlink("https://github.com/roife/llvm-lite", icon: github),
-  tr:  "2022/06 - 2023/06",
-  bl: "Working independently",
-  br: "BUAA"
-)[
-  - Project for my undergraduate thesis, including a independently implemented lightweight edge-side compiler for LLVM IR and trimming work on the LLVM codegen module.
-  - Using shape information at the edge-side device to perform secondary optimization on offline compiled LLVM IR format neural network operators, to reduce the temporal and spatial overhead during operator runtime.
+  tl: "校级优秀生",
+  bl: "2023.9"
+)[      
+  - 学习优秀奖学金  
+  - 学科竞赛奖学金  
+  - 国家励志奖学金  
 ]
 
-== Projects
+== 竞赛经历
 
 #cventry(
-  tl: "Ayame" + " " + iconlink("https://github.com/No-SF-Work/ayame", icon: github),
-  bl: "Co-developer, implemented register allocation and codegen related optimizations"
-)[
-  - A SSA-based compiler for a subset of C to LLVM IR/ARMv7 ASM, with optimizations such as GVN, register allocation etc.
-  - Project for Huawei Bisheng Cup 2021, with performance exceeding $mono("clang -O3")$ on nearly 1/3 of testcases.
+  bl: "十三届蓝桥杯电子设计大赛北京市三等奖",
+  br: "2022.5",
+  bl: "十五届中国大学生计算机设计大赛北京市级朔日杯二等奖二作",
+  br: "2022.5",
+  bl: "北航第三十二届冯如杯竞赛创意赛道三等奖",
+  br: "2022.6",
+  bl: "十四届全国大学生数学竞赛北京市二等奖",
+  br: "2022.12",
+  bl: "十四届蓝桥杯程序设计大赛北京市三等奖",
+  br: "2023.4",
+  bl: "北航第三十三届冯如杯竞赛主赛道制作组三等奖一作",
+  br: "2023.6",
+  bl: "九届互联网+大学生创新创业大赛北京市三等奖二作",
+  br: "2023.8"
+)
+
+== 项目开发
+
+#cventry(
+  tl: "复杂数学计算器开发"
+  tr: "2022.9 - 2022.12"
+)
+[
+  - 项目简介：旨在开发适用于各种复杂数学公式计算的计算器，集微分，积分，线性方程组，不等式求解，矩阵运算等一体化计算器
+  - 项目实现：主要计算方法参考牛顿迭代法和泰勒展开
+  - 编程语言：Java
 ]
 
 #cventry(
-  tl: "Hanggai" + " " + iconlink("https://github.com/Caniformia", icon: github),
-  bl: "Co-developer, participated in iOS app and web backend development"
-)[
-  - An app for the course _Introduction to Aeronautics and Astronautics_ in BUAA, supporting the web and #link("https://apps.apple.com/us/app/航概-hanggai/")[iOS].
+  tl: "肝内胆管细胞癌早期复发风险预测工具"
+  tr: "2022.12 - 2023.5"
+)
+[
+  - 项目简介：本项目设计了一个基于超声影像组学的灰盒深度学习模型，该模型以对病人无损害的超声影像作为输入，自动提取超声图片特征，并由此推断肿瘤内部是否具
+有三级淋巴结构。在此基础上，模型结合超声影像特征、三级淋巴结构信息以及患者临床病症信息，完成复发概率预测。
+  - 项目亮点：
+    - 融合医生先验知识
+    - 结合对比学习
+    - 基于超声影像组学
+  - 编程语言：Python, Pytorch
 ]
 
-== Skills
+#cventry(
+  tl: "\"航味\"菜品推荐网站开发"
+  tr: "2023.7 - 2023.8"
+)
+[
+  - 项目简介：项目收录了北航六大餐厅的菜品，实现了用户注册、登录、上传菜品、菜品评价、菜品推荐等功能
+  - 编程语言：Python, Vue
+]
 
-- *Programming Languages*: C, C++, Java, Rust, Swift, Python, JavaScript, Ruby, Verilog(SV), Haskell.
-- *Compilers*: Proficient in prevalent compilation optimizations; knowledgeable about LLVM and rust-analyzer; experienced in writing parsers, interpreters, and codegen.
-- *PLT*: Familiar with functional programming languages, type systems and formal verification.
-- *Web/Mobile development*: Full-stack; Familiar with Vue, Rails, Django, SwiftUI, Docker, PostgreSQL, Redis.
-- *Dev Tools*: Proficient in Emacs, JetBrains IDEs and Xcode; usually works in macOS and Linux.
+#cventry(
+  tl: "编译器开发"
+  tr: "2023.9 - 至今"
+)
+[
+  - 项目简介：旨在开发以 LLVM IR 作为中间代码，最终生成 MIPS 汇编指令的编译器
+  - 目前进度：优化中间代码
+  - 编程语言：Java 
+]
 
-== Misc
+#cventry(
+  tl: "安卓 APP 开发"
+  tr: "2023.9 - 至今"
+)
+[
+  - 项目简介：基于 Keep 运动软件，开发适用于北航学生户外锻炼，并对标体育课设要求的 APP
+  - 项目进度：后端接口实现，推荐算法设计
+  - 编程语言：Java 
+]
 
-- *Languages*: Chinese (native), English (fluent)
+== 科研经历
+#cventry(
+  tl: "基于单细胞代谢成像的肝细胞癌分子分型研究"
+  tr: "2022.8 - 2022.12"
+)
+[
+  - 研究方向：
+    - 肝细胞癌分子结构解剖
+    - 光学成像分析
+  - 编程语言：Matlab
+]
+
+#cventry(
+  tl: "UAV 无人机自主探索"
+  tr: "2022.9 - 2023.1"
+)
+[
+  - 研究方向：无人机自主避障，路径规划
+  - 编程语言：Python
+]
+
+#cventry(
+  tl: "PosgreSQL 数据库源码分析"
+  tr: "2023.9 - 至今"
+)
+[
+  - 研究方向：PosgreSQL 数据库源码内存管理模块调度分析
+  - 目前进度：内、外存交互
+  - 编程语言：C/C++
+]
+
+== 实习经历
+
+#cventry(
+  tl: "中国移动IT新技术"
+  tr: "2022.12 - 2023.1"
+)
+[
+  - 实习方向：数据挖掘
+  - 编程语言：Python
+]
+
+== 助教工作
+
+- *数据结构与程序设计助教*: 北航信息类核心课程   - 2023.3 - 2023.6
+- *计算机组成原理助教*: 北航计算机学院核心专业课 - 2023.7 - 至今
+- *操作系统助教*: 北航计算机学院核心专业课       - 2023.7 - 至今
+
+== 专业技能
+
+- *编程语言*: C/C++, Java, Python, JavaScript, Verilog, MIPS.
+- *技术栈*: Vue, Git, PostgreSQL
+- *开发环境/工具*: Windows, Linux, JetBrain IDEs, VSCode
+
+== 其他信息
+- 北航 2021 级计算机学院发展辅导委员
+- 北航 210613 小班团支书
+- 北航信息类工科数学分析课程答疑组成员
